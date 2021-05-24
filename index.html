@@ -14,21 +14,29 @@
     <h1 id="title">Club Review Survey</h1>
     <p id="description">Take this short survey and give a review of your visit.</p>
     <form id="survey-form" action="" method="post">
-        <label for="name" id="name-label">Name</label> 
+        <div class="user-data">
+            <label for="name" id="name-label">Name</label> 
+            <br>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
         <br>
-        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        <div class="user-data">
+            <label for="email" id="email-label">E-Mail</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+        </div>    
         <br>
-        <label for="email" id="email-label">E-Mail</label>
+        <div class="user-data">
+            <label for="age" id="number-label">Age</label>
+            <br>
+            <input type="number" id="age" name="age" placeholder="Your age" min="18" max="120">
+        </div>
         <br>
-        <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
-        <br>
-        <label for="age" id="number-label">Age</label>
-        <br>
-        <input type="number" id="age" name="age" placeholder="Your age" min="18" max="120">
-        <br>
-        <label for="guests" id="guests-label">Number of guests</label>
-        <br>
-        <input type="number" name="guests" id="guests" placeholder="Did you come alone or with friends?">
+        <div class="user-data">
+            <label for="guests" id="guests-label">Number of guests</label>
+            <br>
+            <input type="number" name="guests" id="guests" placeholder="Did you come alone or with friends?">
+        </div>
         <br>
         <label for="dropdown" id="dropdown-label">What genre of music was played at the club?</label>
         <br>
@@ -45,7 +53,6 @@
         <p>Would you come again?</p>
         <input type="radio" name="come-again" id="yes" value="yes">
         <label for="yes">Yes</label>
-        <br>
         <input type="radio" name="come-again" id="no">
         <label for="no">No</label>
         <p>Which of the following points apply to your visit?</p>
@@ -72,7 +79,7 @@
 
 
         <br>
-        <input type="submit" value="submit review" id="submit">
+        <input type="submit" value="Submit Review" id="submit">
 
         <p>Thank you for taking the time for this review!</p>
     </form>

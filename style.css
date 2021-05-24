@@ -4,9 +4,42 @@ body {
     max-width: 100%;
     margin: auto;
 }
+form {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding: 0.5em 1em;
+    background-color: lightgoldenrodyellow;
+    border-radius: 20px;
+}
+form p {
+    font-size: 20px;
+}
 #title {
     font-size: 3.5em;
 }
 #description {
     font-size: 18px;
+}
+label {
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+.user-data input {
+    width: 80%;
+    padding: 1em;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.user-data input :current {
+    border-radius: 10px;
+}
+#dropdown {
+    width: 90%;
+    font-size: 16px;
+    padding: 1em 0.5em;
+}
+#yes, #no {
+min-width: 16px;
+min-height: 16px;
 }
