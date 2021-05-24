@@ -12,8 +12,70 @@
 </head>
 <body>
     <h1 id="title">Club Review Survey</h1>
-    <h2>Take this short survey and give a review of a club you visited.</h2>
-    
+    <p id="description">Take this short survey and give a review of your visit.</p>
+    <form id="survey-form" action="" method="post">
+        <label for="name" id="name-label">Name</label> 
+        <br>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email" id="email-label">E-Mail</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Enter your E-Mail" required>
+        <br>
+        <label for="age" id="number-label">Age</label>
+        <br>
+        <input type="number" id="age" name="age" placeholder="Your age" min="18" max="120">
+        <br>
+        <label for="guests" id="guests-label">Number of guests</label>
+        <br>
+        <input type="number" name="guests" id="guests" placeholder="Did you come alone or with friends?">
+        <br>
+        <label for="dropdown" id="dropdown-label">What genre of music was played at the club?</label>
+        <br>
+        <select name="dropdown" id="dropdown" required="">
+            <option value="" selected disabled>Please select</option>
+            <option value="techno">Techno</option>
+            <option value="house">House</option>
+            <option value="hip-hop">Hip-Hop</option>
+            <option value="downtempo">Downtempo</option>
+            <option value="jungle">Jungle</option>
+            <option value="psytrance">Psytrance</option>
+            <option value="none">None of the above</option>
+        </select>
+        <p>Would you come again?</p>
+        <input type="radio" name="come-again" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <br>
+        <input type="radio" name="come-again" id="no">
+        <label for="no">No</label>
+        <p>Which of the following points apply to your visit?</p>
+        <input type="checkbox" name="visit" value="bathrooms">
+        <label for="bathrooms">Dirty bathrooms</label>
+        <br>
+        <input type="checkbox" name="visit" value="waitingtime">
+        <label for="waitingtime">Long waiting in cue</label>
+        <br>
+        <input type="checkbox" name="visit" value="drinks">
+        <label for="drinks">Expensive drinks</label>
+        <br>
+        <input type="checkbox" name="visit" value="atmosphere">
+        <label for="atmosphere">Great atmosphere</label>
+        <br>
+        <input type="checkbox" name="visit" value="staff">
+        <label for="staff">Nice staff</label>
+        <br>
+        <input type="checkbox" name="visit" id="space">
+        <label for="space">Lots of space to dance</label>
+        <br>
+        <p>Do you have additional comments?</p>
+        <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Additional comments"></textarea>
+
+
+        <br>
+        <input type="submit" value="submit review" id="submit">
+
+        <p>Thank you for taking the time for this review!</p>
+    </form>
 
 
     <footer>
