@@ -50,30 +50,36 @@
             <option value="psytrance">Psytrance</option>
             <option value="none">None of the above</option>
         </select>
+
         <p>Would you come again?</p>
         <input type="radio" name="come-again" id="yes" value="yes">
         <label for="yes">Yes</label>
         <input type="radio" name="come-again" id="no">
         <label for="no">No</label>
-        <p>Which of the following points apply to your visit?</p>
-        <input type="checkbox" name="visit" value="bathrooms">
-        <label for="bathrooms">Dirty bathrooms</label>
-        <br>
-        <input type="checkbox" name="visit" value="waitingtime">
-        <label for="waitingtime">Long waiting in cue</label>
-        <br>
-        <input type="checkbox" name="visit" value="drinks">
-        <label for="drinks">Expensive drinks</label>
-        <br>
-        <input type="checkbox" name="visit" value="atmosphere">
-        <label for="atmosphere">Great atmosphere</label>
-        <br>
-        <input type="checkbox" name="visit" value="staff">
-        <label for="staff">Nice staff</label>
-        <br>
-        <input type="checkbox" name="visit" id="space">
-        <label for="space">Lots of space to dance</label>
-        <br>
+
+        <div class="checkboxes-div">
+            <p>Which of the following points apply to your visit?</p>
+            <input type="checkbox" name="visit" value="bathrooms">
+            <label for="bathrooms">Dirty bathrooms</label>
+            <br>
+            <input type="checkbox" name="visit" value="waitingtime">
+            <label for="waitingtime">Long waiting in cue</label>
+            <br>
+            <input type="checkbox" name="visit" value="drinks">
+            <label for="drinks">Expensive drinks</label>
+            <br>
+            <input type="checkbox" name="visit" value="atmosphere">
+            <label for="atmosphere">Great atmosphere</label>
+            <br>
+            <input type="checkbox" name="visit" value="staff">
+            <label for="staff">Nice staff</label>
+            <br>
+            <input type="checkbox" name="visit" id="space">
+            <label for="space">Lots of space to dance</label>
+            <br>
+        </div>
+
+
         <p>Do you have additional comments?</p>
         <textarea name="comments" id="comments" cols="40" rows="5" placeholder="Additional comments"></textarea>
 

@@ -1,0 +1,1 @@
+This small HTML survey form was made for the "Responsive Web Design" Course on Freecodecamp. To access the page, visit [https://auwolf33.github.io/club-review/](https://auwolf33.github.io/club-review/).
